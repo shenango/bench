@@ -1,0 +1,6 @@
+*.o
+*.d
+spin-ix
+spin-linux
+spin-arachne
+*~
