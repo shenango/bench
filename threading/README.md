@@ -24,5 +24,5 @@ sudo ./CoreArbiter/bin/coreArbiterServer
 
 In this directory:
 ```
-./tbench_arachne
+sudo ./tbench_arachne
 ```

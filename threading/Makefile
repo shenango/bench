@@ -2,7 +2,7 @@
 
 CXXFLAGS  = -g -Wall -std=gnu++11 -D_GNU_SOURCE $(INC) -mssse3
 LDFLAGS = -no-pie
-ARACHNE ?= ../../arachne-all/Arachne
+ARACHNE_ALL ?= ../../arachne-all
 
 LD	= g++
 CC	= g++
@@ -23,9 +23,9 @@ tbench_obj = $(tbench_src:.cc=.o)
 tbench_linux_src = tbench_linux.cc
 tbench_linux_obj = $(tbench_linux_src:.cc=.o)
 
-LIBS_ARACHNE=-I$(ARACHNE)/include -I$(ARACHNE)/../CoreArbiter/include  -I$(ARACHNE)/../PerfUtils/include \
-	-L$(ARACHNE)/lib -lArachne -L$(ARACHNE)/../CoreArbiter/lib -lCoreArbiter \
-	$(ARACHNE)/../PerfUtils/lib/libPerfUtils.a -lpcrecpp -pthread
+LIBS_ARACHNE=-I$(ARACHNE_ALL)/Arachne/include -I$(ARACHNE_ALL)/CoreArbiter/include  -I$(ARACHNE_ALL)/PerfUtils/include \
+	-L$(ARACHNE_ALL)/Arachne/lib -lArachne -L$(ARACHNE_ALL)/CoreArbiter/lib -lCoreArbiter \
+	$(ARACHNE_ALL)/PerfUtils/lib/libPerfUtils.a -lpcrecpp -pthread
 
 # must be first
 all: tbench_linux tbench_arachne
