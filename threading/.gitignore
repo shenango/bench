@@ -1,3 +1,5 @@
 tbench_arachne
 tbench_linux
 *~
+*.d
+*.o

@@ -1,6 +1,6 @@
 BASE_DIR ?= ../..
 IX_DIR ?= $(BASE_DIR)/zygos
-ARACHNE_DIR ?= $(BASE_DIR)/memcached-A/arachne-all
+ARACHNE_DIR ?= $(BASE_DIR)/memcached-arachne/arachne-all
 SHENANGO_DIR ?= $(BASE_DIR)/shenango
 INC = -I$(SHENANGO_DIR)/apps/bench -I$(ARACHNE_DIR)/Arachne/include -I$(ARACHNE_DIR)/CoreArbiter/include -I$(ARACHNE_DIR)/PerfUtils/include
 

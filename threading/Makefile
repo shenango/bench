@@ -2,7 +2,7 @@
 
 CXXFLAGS  = -g -Wall -std=gnu++11 -D_GNU_SOURCE $(INC) -mssse3
 LDFLAGS = -no-pie
-ARACHNE_ALL ?= ../../memcached-A/arachne-all
+ARACHNE_ALL ?= ../../memcached-arachne/arachne-all
 
 LD	= g++
 CC	= g++
